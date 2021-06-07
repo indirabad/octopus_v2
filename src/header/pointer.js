@@ -2,7 +2,7 @@ import { POINTER_COLOR } from "../const";
 
 export const initPointer = () => {
   const points = [];
-  const $pointer = $(".header-animate-dot");
+  const $pointer = $(".title-dot");
 
   const $canvas = $(".pointer-area");
   $canvas.attr("width", window.innerWidth);
