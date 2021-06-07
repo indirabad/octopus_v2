@@ -1,0 +1,126 @@
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  //navbar-brand
+  &-brand {
+    max-width: 45%;
+    @media (min-width: 992px) {
+      max-width: 25%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  //navbar-collapse
+  &-collapse {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 116px;
+    left: 0;
+    background: $c-default;
+    margin: 0;
+    @media (min-width: 992px) {
+      position: inherit;
+      background: transparent;
+    }
+
+    .navbar-nav {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 12px;
+      @media (min-width: 576px) {
+        max-width: 540px;
+      }
+
+      @media (min-width: 768px) {
+        max-width: 720px;
+      }
+
+      @media (min-width: 992px) {
+        max-width: none;
+        padding: 0;
+        margin: inherit;
+      }
+    }
+  }
+
+  //navbar-dark
+  &-dark {
+    .navbar-nav {
+      @media (min-width: 1680px) {
+        margin-left: -115px;
+      }
+      .nav-link {
+        font-weight: 600;
+        color: $c-white;
+        &:hover,
+        &:focus {
+          color: $c-brand;
+        }
+        @media (min-width: 1680px) {
+          padding-right: 1.25rem;
+          padding-left: 1.25rem;
+        }
+      }
+    }
+  }
+
+  //navbar-toggler
+  .navbar-toggler {
+    min-height: 40px;
+    & > .close {
+      display: inline;
+    }
+    &.collapsed {
+      & > .close {
+        display: none;
+      }
+    }
+    &:not(.collapsed) {
+      & > .navbar-toggler-icon {
+        display: none;
+      }
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  //navbar-lang
+  &-lang {
+    font-weight: 500;
+  }
+
+  //navbar-link
+  &-link {
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    color: $c-white;
+    padding: 0.5rem 0.5rem;
+
+    @media (min-width: 320px) {
+      padding: 0.5rem 1rem;
+    }
+
+    @media (min-width: 992px) {
+      padding: 0.5rem 0;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.125rem;
+    }
+
+    @media (min-width: 1680px) {
+      font-size: 1.25rem;
+    }
+
+    &:focus,
+    &:hover {
+      color: $c-brand;
+    }
+  }
+}

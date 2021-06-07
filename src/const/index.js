@@ -1,0 +1,1 @@
+export const POINTER_COLOR = "#FF4978";

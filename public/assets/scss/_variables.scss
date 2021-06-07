@@ -1,0 +1,25 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+// PATH
+$font-folder: "../fonts/";
+$img-folder: "../images/";
+
+// COLORS
+$c-default: #4f4f4f;
+$c-brand: #ff4978;
+$c-brand-dark: #ee6d8f;
+$c-white: #ffffff;
+$c-grey: #929292;
+
+// FONTS
+
+$font-base: "Montserrat", Arial, sans-serif;
+
+// MIXIN
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

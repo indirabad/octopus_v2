@@ -1,0 +1,37 @@
+.form-brand {
+  input {
+    border: none;
+    border-bottom: 1px solid $c-white;
+    margin-bottom: 40px;
+    background-color: transparent;
+    padding: 35px 28px 35px 0;
+    height: 50px;
+    outline: none;
+    color: $c-white;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 28%;
+    }
+
+    &:not(:last-child) {
+      @media (min-width: 768px) {
+        margin-right: 7%;
+      }
+    }
+
+    &::placeholder {
+      color: $c-white;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+    }
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+}

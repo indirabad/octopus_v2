@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100%;
+  font-family: $font-base;
+  font-size: 1.125rem;
+  line-height: 1.66;
+  font-weight: normal;
+  display: flex;
+  margin: 0;
+  color: $c-default;
+  background: $c-white;
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 1680px) {
+    font-size: 1.875rem;
+  }
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  @media (min-width: 1440px) {
+    max-width: 1390px;
+  }
+  @media (min-width: 1680px) {
+    max-width: 1630px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1846px;
+  }
+}
+
+.modal-xl {
+  max-width: 100%;
+}
+
+.bg-grey {
+  background-color: $c-default;
+}
+
+.c-white {
+  color: $c-white;
+}
+
+.c-brand {
+  color: $c-brand;
+}
